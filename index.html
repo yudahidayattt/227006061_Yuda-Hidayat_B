@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Enkripsi dan Dekripsi menggunakan AES</h2>
+
+    <label for="plaintext">Plaintext:</label>
+    <textarea id="plaintext" placeholder="Masukkan teks plainteks"></textarea>
+
+    <label for="key">Kunci:</label>
+    <input type="text" id="key" placeholder="Masukkan kunci enkripsi">
+
+    <label for="operation">Operasi:</label>
+    <select id="operation">
+      <option value="encrypt">Enkripsi</option>
+      <option value="decrypt">Dekripsi</option>
+    </select>
+
+    <button onclick="process()">Proses</button>
+
+    <h3></h3>
+
+    
+      <label for="result">Hasil:</label>
+      <textarea id="result" placeholder="Hasil enkripsi atau dekripsi" readonly></textarea>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
